@@ -3,10 +3,7 @@ export default function Navbar() {
     <>
       <div className="nav">
         <div className="nav-text">
-          <img
-            src="./src/assets/images/extension logo.png"
-            className="nav-img"
-          />
+          <img src="/images/extension logo.png" className="nav-img" />
           <p className="extension-text">Extensions</p>
         </div>
         <div className="setting">
