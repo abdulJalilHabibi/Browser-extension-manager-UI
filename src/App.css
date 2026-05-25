@@ -1,0 +1,197 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(to bottom, #0b132b, #101628, #15263b);
+  background-attachment: fixed;
+}
+.container-app {
+  margin: 20px;
+}
+.nav-img {
+  width: 70px;
+  height: 70px;
+}
+.nav-text {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  margin-right: 60px;
+}
+.nav {
+  display: flex;
+  color: white;
+  height: 55px;
+  background-color: #1e2e43;
+  border-radius: 10px;
+}
+.extension-text {
+  margin-left: -11px;
+}
+
+.setting {
+  margin-left: auto;
+}
+.nav-setting {
+  margin-right: 12px;
+  background-color: #243549;
+  width: 20px;
+  height: 30px;
+  margin-top: 10px;
+
+  padding: 3px 7px;
+  border-radius: 6px;
+}
+.extension-list {
+  display: flex;
+}
+h3 {
+  color: white;
+}
+.btn-extension {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+  align-items: center;
+}
+.btn {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  padding: 5px 10px;
+}
+.btn.active {
+  background: #f43f5e;
+  color: white;
+  border: none;
+}
+
+.All-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px;
+}
+.card-container {
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  max-width: 280px;
+  min-width: 240px;
+  height: 140px;
+  background-color: #1e2e43;
+  border-radius: 8px;
+}
+
+.text-item {
+  margin-left: 10px;
+  margin-top: -22.5px;
+}
+h5 {
+  color: white;
+}
+.paragraph {
+  color: rgba(208, 198, 198, 0.582);
+  font-size: 11px;
+  width: 180px;
+  margin-top: -16px;
+}
+.img {
+  width: 45px;
+  height: 45px;
+}
+
+.text-img {
+  display: flex;
+  margin: 10px;
+}
+
+.remove-btn {
+  display: flex;
+  margin-left: 10px;
+  margin-top: auto;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.check-box input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.check-box {
+  margin-left: auto;
+  position: relative;
+  width: 44px;
+  height: 24px;
+  display: inline-block;
+}
+.rm-btn {
+  text-align: center;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: #cbd5e1;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #334155;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+  width: 20px;
+  height: 12px;
+  margin-top: 10px;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 3px;
+  top: 3px;
+  margin-top: -2px;
+  margin-left: -3px;
+  margin-right: -20px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.check-box input:checked + .slider {
+  background: red;
+}
+
+.check-box input:checked + .slider::before {
+  transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .btn-extension {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
